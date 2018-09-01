@@ -25,6 +25,7 @@
 	          </a>
 	          <div class="desc">
 	          	<span><i class="fas fa-check icon"></i>Vue.js</span>
+	          	<span><i class="fas fa-check icon"></i>Vuex</span>
 	          	<span><i class="fas fa-check icon"></i>AJAX</span>
 	          	<span><i class="fas fa-check icon"></i>Bootstrap</span>
 	          	<span><i class="fas fa-check icon"></i>Webpack</span>
@@ -70,9 +71,8 @@
 	          </div>
 	          <div class="desc">
 	          	<span><i class="fas fa-check icon"></i>Vue.js</span>
-	          	<span><i class="fas fa-check icon"></i>Vuex</span>
 	          	<span><i class="fas fa-check icon"></i>Webpack</span>
-	          	<span><i class="fas fa-check icon"></i>i18n</span>
+	          	<span><i class="fas fa-check icon"></i>Bootstrap</span>
 	          </div>
       		</div>
       	</div>

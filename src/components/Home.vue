@@ -10,21 +10,21 @@
 </template>
 
 <script>
-	import Navbar from './Navbar.vue';
-	import About from './About.vue';
-	import Skill from './Skill.vue';
-	import Project from './Project.vue';
-	import Resume from './Resume.vue';
-	import Footer from './Footer.vue';
+	import navbar from './Navbar.vue';
+	import about from './About.vue';
+	import skill from './Skill.vue';
+	import project from './Project.vue';
+	import resume from './Resume.vue';
+	// import Footer from './Footer.vue';
 
 	export default {
 	  components: {
-	    Navbar,
-	    About,
-	    Skill,
-	    Project,
-	    Resume,
-	    Footer,
+	    navbar,
+	    about,
+	    skill,
+	    project,
+	    resume,
+	    // Footer,
 	  },
 	  data () {
 	    return {}

@@ -2,10 +2,22 @@
 	<div id="resume">
 		<div class="container">
       <div class="row clearfix">
-      	<div class="u-col-12">
+				
+				<div class="u-col-12">
       		<div class="main-title">履歷</div>
       		<hr>
+					<!-- resume -->
+    			<div class="resume">
+		        <img class="resume-img" src="../images/cv.png" alt="resume" ref="image">
+		      </div>
+      		<!-- download -->
+      		<div class="download">
+			      <a class="download-btn" href="../images/cv.pdf" download="蕭宇欣albee_cv">
+	          	下載
+	          </a>
+      		</div>
       	</div>
+
       </div>
     </div>
 	</div>
@@ -50,11 +62,6 @@
 	.row {
 	  margin: 0 -10px;
 	}
-	.u-col-6 {
-		float: left;
-	  padding: 0 30px;
-	  width: 50%;
-	}
 	.u-col-12 {
 		float: left;
 	  padding: 0 30px;
@@ -88,4 +95,31 @@
 		margin-bottom: 2rem;
 		width: 10%;
 	}
+	.download-btn {
+		display: block;
+    width: 100px;
+    margin: 3% auto;
+    padding: 1% 0;
+    font-size: .85rem;
+    text-align: center;
+    color: $gray-blue;
+    border: 1px solid;
+    border-radius: 20px;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover {
+			color: white;
+      background-color: $gray-blue;
+    }
+  }
+  .resume {
+  	display: flex;
+    justify-content: center;
+    align-items: center;
+    .resume-img {
+	  	display: block;
+	  	width: 40%;
+	  	border: 1px solid $dark-gray;
+	  }
+  }
 </style>
