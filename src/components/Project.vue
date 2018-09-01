@@ -160,7 +160,7 @@
 	}
 	#projects {
 	  width: 100%;
-	  min-height: 700px;
+	  min-height: 600px;
 	  // background: #F7F7F7;
 	  position: relative;
 	  display: flex;
@@ -257,5 +257,24 @@
         margin-right: 0.4rem;
       }
     }
+  }
+  @media (max-width: 1024px) { 
+    .container {
+      max-width: 760px; 
+    }
+  }
+  @media (max-width: 768px) { 
+    .container {
+      max-width: 400px; 
+    }
+    .u-col-6 {
+      width: 100%;
+    }
+		.main-title {
+			margin-top: 4rem;
+		}
+		hr {
+			margin-bottom: 1rem;
+		}
   }
 </style>

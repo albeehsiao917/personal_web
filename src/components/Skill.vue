@@ -124,7 +124,7 @@
 
 	#skill {
 	  width: 100%;
-	  min-height: 700px;
+	  min-height: 600px;
 	  // background: #FBFAF4;
 	  position: relative;
 	  display: flex;
@@ -195,4 +195,37 @@
 		margin-bottom: 2rem;
 		width: 10%;
 	}
+	@media (max-width: 1024px) { 
+    .container {
+      max-width: 760px; 
+    }
+    .icon {
+    	top: -17%;
+	    left: -13%;
+	    width: 55px;
+	    height: 55px;
+    }
+    .card:before {
+    	top: 0.5rem;
+    	left: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) { 
+    .container {
+      max-width: 400px; 
+    }
+    .u-col-6 {
+      width: 100%;
+    }
+		.item {
+			line-height: 1.6rem;
+		}
+		.main-title {
+			margin-top: 4rem;
+		}
+		hr {
+			margin-bottom: 1rem;
+		}
+  }
 </style>

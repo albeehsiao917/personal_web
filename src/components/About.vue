@@ -118,7 +118,7 @@
 
 	#about {
 	  width: 100%;
-	  min-height: 700px;
+	  min-height: 600px;
 	  background: white;
 	  position: relative;
 	  display: flex;
@@ -202,5 +202,41 @@
 	    }
 	  }
   }
-  
+  @media (max-width: 1024px) { 
+    .container {
+      max-width: 760px; 
+    }
+    .u-col-4 {
+      width: 40%;
+    }
+    .u-col-8 {
+      width: 60%;
+    }
+  }
+  @media (max-width: 768px) { 
+    .container {
+      max-width: 400px; 
+    }
+    .u-col-4, .u-col-8 {
+      width: 100%;
+    }
+    .left {
+    	.content-title {
+    		font-size: 1.3rem;
+		    font-weight: 400;
+		    margin-top: 7rem;
+    	}
+    }
+    .info, .description {
+    	font-size: 0.9rem;
+		}
+		.right {
+	  	.image {
+		    margin: 2rem 0;
+		  }
+		  .icons {
+		    margin-top: 0px;
+		  }
+	  }
+  }
 </style>

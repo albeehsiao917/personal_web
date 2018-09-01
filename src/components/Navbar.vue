@@ -1,18 +1,72 @@
 <template>
-	<header>
+	<!-- <header>
 		<div class="web-name">Hi, I'm Albee</div>
-    <nav>
+    <nav :class="{'open':isMenu}">
       <a class="link" v-scroll-to="'#about'">關於</a>
-      <!-- {{$t("Landing.about", $store.state.language)}} -->
-      <span>|</span>
+      <span class="boundary"></span>
       <a class="link" v-scroll-to="'#skill'">技能</a>
-      <span>|</span>
+      <span class="boundary"></span>
       <a class="link" v-scroll-to="'#projects'">專案</a>
-      <span>|</span>
+      <span class="boundary"></span>
       <a class="link" v-scroll-to="'#resume'">履歷</a>
     </nav>
-  </header>
+
+    <div id="menu-trigger">
+      <button class="menu-btn btn" @click.prevent="isMenu = !isMenu">
+        <span>
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+    </div>
+  </header> -->
+
+  <div id="header">
+    <div class="container clearfix">
+        <div class="u-col-4" id="logo">
+            <div class="web-name">Hi, I'm Albee</div>
+        </div>
+        <div class="u-col-8">
+          <div id="nav" :class="{'open':isMenu}">
+          	<ul>
+          		<li>
+          			<a v-scroll-to="'#about'">關於</a>
+			      		<span class="boundary"></span>
+          		</li>
+          		<li>
+          			<a v-scroll-to="'#skill'">技能</a>
+			      		<span class="boundary"></span>
+          		</li>
+          		<li>
+          			<a v-scroll-to="'#projects'">專案</a>
+			      		<span class="boundary"></span>
+          		</li>
+          		<li>
+          			<a v-scroll-to="'#resume'">履歷</a>
+          		</li>
+          	</ul>
+          </div>
+        </div>
+        <div id="menu-trigger">
+          <button class="menu-btn btn" @click.prevent="isMenu = !isMenu">
+            <span>
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+        </div>
+    </div>
+  </div>
+
 </template>
+
+<script>
+	export default {
+    data() {
+      return {
+        isMenu: false,
+      }
+    },
+  }
+</script>
 
 <style lang="scss" scoped>
 	$dark-black: #333;
@@ -44,18 +98,23 @@
 	li {
 	  list-style-type: none;
 	}
-	p {
-	  color: $dark-gray;
-	  line-height: 30px;
-	}
 	a {
 	  color: $dark-black;
 	  text-decoration: none;
 	}
-	header {
-	  position: fixed;
+	.u-col-4, .u-col-8 {
+		float: left;
+	  padding: 0;
+	}
+	.u-col-4 {
+		width: 33.33333%;
+	}
+	.u-col-8 {
+		width: 66.66667%;
+	}
+	#header {
+    position: fixed;
 	  width: 100%;
-	  height: 80px;
 	  display: flex;
 	  justify-content: flex-end;
 	  align-items: center;
@@ -63,43 +122,120 @@
 	  background: $light-gray;
 	  z-index: 100;
 	  border-top: 7px solid $dark-gray;
-	}
-	nav {
-	  display: flex;
-	  justify-content: flex-end;
-	  width: 100%;
-	  align-items: center;
-
-	  .link {
+  }
+  #logo {
+    position: relative;
+    float: left;
+    text-transform: uppercase;
+    line-height: 100px;
+  }
+	#nav {
+    position: relative;
+    float: right;
+    line-height: 100px;
+    li {
+      float: left;
+    }
+    a {
 	    margin: 0 1%;
 	    letter-spacing: 2px;
 	    font-size: 1rem;
 	    color: $dark-black;
 	    text-decoration: none;
-
 	    &:hover {
 	      color: $gray-blue;
 	      cursor: pointer;
 	      border-bottom: 2px solid $gray-blue;
 	    }
 	  }
-
-	  span {
-	    color: $dark-black;
-	  }
-	}
+  }
+	.boundary {
+    &:after {
+      content: "|";
+      padding: 0 12px;
+      color: $dark-black;
+    }
+  }
 	.web-name{
-		width: 30%;
 		display: flex;
 		justify-content: flex-start;
 		text-decoration: none;
 	  font-family: 'Knewave', cursive;
 	  font-size: 36px;
 	  padding: 0 1%;
-	  // background: -webkit-linea,r-gradient(45deg, #247BA0, #70C1B3);
 	  background: $dark-black;
 	  -webkit-background-clip: text;
 	  background-clip: text;
 	  -webkit-text-fill-color: transparent;
 	}
+	#menu-trigger {
+    display: none;
+  }
+  .menu-btn {
+    background: #f5f5f5;
+    border: 1px solid #7e7e7e;
+  }
+	@media (max-width: 1024px) { 
+    .container {
+      max-width: 760px; 
+    }
+    // .u-col-4 {
+    //   width: 40%;
+    // }
+    // .u-col-8 {
+    //   width: 60%;
+    // }
+    .web-name{
+	    font-size: 28px;
+		}
+  }
+  @media (max-width: 620px) { 
+    .container {
+      max-width: 400px; 
+    }
+    .u-col-4 {
+			width: 80%;
+		}
+		.u-col-8 {
+			width: 100%;
+		}
+	  #nav {
+      display: none;
+    }
+    #menu-trigger {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      padding: 5px 0;
+    }
+    #logo {
+      padding: 5px 0;
+      line-height: 38px;
+    }
+    .boundary {
+      &:after {
+        content: "";
+        padding: 0;
+      }
+    }
+    #nav.open {
+      display: block;
+      width: 100%;
+      height: 20%;
+      text-align: center;
+      background-color: #f5f5f5;
+      line-height: 25px;
+		  ul {
+        position: relative;
+        float: none;
+      }
+      li {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 5px;
+        float: none;
+      }
+    }
+  }
 </style>

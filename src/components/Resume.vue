@@ -12,7 +12,7 @@
 		      </div>
       		<!-- download -->
       		<div class="download">
-			      <a class="download-btn" href="../images/cv.pdf" download="蕭宇欣albee_cv">
+			      <a class="download-btn" href="../images/Albee_cv.pdf" download>
 	          	下載
 	          </a>
       		</div>
@@ -73,7 +73,7 @@
 	}
 	#resume {
 	  width: 100%;
-	  min-height: 700px;
+	  min-height: 600px;
 	  // background: #F7F7F7;
 	  position: relative;
 	  display: flex;
@@ -121,5 +121,33 @@
 	  	width: 40%;
 	  	border: 1px solid $dark-gray;
 	  }
+  }
+  @media (max-width: 1024px) { 
+    .container {
+      max-width: 760px; 
+    }
+  }
+  @media (max-width: 768px) { 
+    .container {
+      max-width: 400px; 
+    }
+    .u-col-6 {
+      width: 100%;
+    }
+		.main-title {
+			margin-top: 4rem;
+		}
+		hr {
+			margin-bottom: 1rem;
+		}
+		.resume {
+	    .resume-img {
+		  	width: 80%;
+		  }
+	  }
+	  .download-btn {
+	    padding: 2.5% 0;
+	    margin: 8% auto;
+  	}
   }
 </style>
