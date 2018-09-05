@@ -22,7 +22,9 @@
             </div>
       		</div>
       		<div class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta suscipit error laboriosam debitis atque ab temporibus nisi veritatis voluptate sunt, qui, quos libero cumque ad ducimus numquam molestias eos eaque possimus ullam hic inventore. Expedita voluptates quis tempore quia, aliquid quae aspernatur tenetur dolorum, dicta, nesciunt, ab consequatur quidem facere.	
+            2017年畢業於元智大學資訊管理學系，畢業後即擔任專案助理⼀職。工作期間有⼤量時間需與前、後端工程師構通、討論系統功能，也因此讓我理解到前端工程師不只要有良好的UI/UX敏感度，也須具備程式的邏輯思考，是一個整合的⾓色。更讓我對前端網⾴製作、立即擁有畫⾯回饋產⽣非常濃厚的興趣，並確立好成為前端⼯程師的目標。	
+            <br>
+            學習過程是利用下班後與假⽇的零碎時間，透過網路線上課程自學網⾴製作相關技能，努⼒朝著網⾴前端⼯程師的⽅向前進。跟著線上課程摸索語法、架構，認為程式是化繁為簡的⼯具，因此非常要求⾃己寫出簡明的程式碼。期許⾃己能夠將實力擴充⾄全世界所需的前後端⼈才程度。
           </div>
       	</div>
       	<!-- photo -->
