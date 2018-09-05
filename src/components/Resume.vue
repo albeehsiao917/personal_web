@@ -12,7 +12,9 @@
 		      </div>
       		<!-- download -->
       		<div class="download">
-			      <a class="download-btn" href="../images/Albee_cv.pdf" download>
+			      <a class="download-btn" 
+			      	href="https://drive.google.com/open?id=1xkw_K9lSa1IOeXTrJ-QUoWG1v8tmBDbo" 
+			      	target="_blank">
 	          	下載
 	          </a>
       		</div>
@@ -22,10 +24,6 @@
     </div>
 	</div>
 </template>
-
-<script>
-
-</script>
 
 <style lang="scss" scoped>
 	$dark-black: #333;

@@ -1,5 +1,5 @@
 <template>
-	<div id="projects">
+	<div id="project">
 		<div class="container">
       <div class="row clearfix">
 
@@ -7,6 +7,7 @@
       		<div class="main-title">專案</div>
       		<hr>
       	</div>
+
 				<!-- Weird Store -->
       	<div class="u-col-6">
       		<div class="project">
@@ -59,16 +60,12 @@
       	<div class="u-col-6">
       		<div class="project">
       			<a class="card">
-      				<!-- href="#" target="_blank" -->
 		          <div class="imgbox">
 		          	<img src="../images/project_personal_web.png" alt="Personal Web"/>
 		          </div>
 		          <div class="title">Personal Web</div>
 	        	</a>
-	          <div class="code"> 
-	          	<!-- href="#" target="_blank" -->
-	          	It's Here
-	          </div>
+	          <div class="code">It's Here</div>
 	          <div class="desc">
 	          	<span><i class="fas fa-check icon"></i>Vue.js</span>
 	          	<span><i class="fas fa-check icon"></i>Webpack</span>
@@ -104,10 +101,6 @@
     </div>
 	</div>
 </template>
-
-<script>
-
-</script>
 
 <style lang="scss" scoped>
 	$dark-black: #333;
@@ -158,10 +151,9 @@
 	  color: $dark-black;
 	  text-decoration: none;
 	}
-	#projects {
+	#project {
 	  width: 100%;
 	  min-height: 600px;
-	  // background: #F7F7F7;
 	  position: relative;
 	  display: flex;
 	  justify-content: center;

@@ -55,10 +55,6 @@
   </div>
 </template>
 
-<script>
-	
-</script>
-
 <style lang="scss" scoped>
 	$dark-black: #333;
 	$dark-gray: #50514F;

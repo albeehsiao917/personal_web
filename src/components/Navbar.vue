@@ -1,25 +1,4 @@
 <template>
-	<!-- <header>
-		<div class="web-name">Hi, I'm Albee</div>
-    <nav :class="{'open':isMenu}">
-      <a class="link" v-scroll-to="'#about'">關於</a>
-      <span class="boundary"></span>
-      <a class="link" v-scroll-to="'#skill'">技能</a>
-      <span class="boundary"></span>
-      <a class="link" v-scroll-to="'#projects'">專案</a>
-      <span class="boundary"></span>
-      <a class="link" v-scroll-to="'#resume'">履歷</a>
-    </nav>
-
-    <div id="menu-trigger">
-      <button class="menu-btn btn" @click.prevent="isMenu = !isMenu">
-        <span>
-          <i class="fas fa-bars"></i>
-        </span>
-      </button>
-    </div>
-  </header> -->
-
   <div id="header">
     <div class="container clearfix">
         <div class="u-col-4" id="logo">
@@ -37,11 +16,12 @@
 			      		<span class="boundary"></span>
           		</li>
           		<li>
-          			<a v-scroll-to="'#projects'">專案</a>
+          			<a v-scroll-to="'#project'">專案</a>
 			      		<span class="boundary"></span>
           		</li>
           		<li>
           			<a v-scroll-to="'#resume'">履歷</a>
+                <span class="boundary"></span>
           		</li>
           	</ul>
           </div>
@@ -130,9 +110,10 @@
     line-height: 100px;
   }
 	#nav {
+    line-height: 100px;
     position: relative;
     float: right;
-    line-height: 100px;
+    
     li {
       float: left;
     }
@@ -146,10 +127,9 @@
 	      color: $gray-blue;
 	      cursor: pointer;
 	      border-bottom: 2px solid $gray-blue;
-	    }
-	  }
+	    }	  }
   }
-	.boundary {
+  .boundary {
     &:after {
       content: "|";
       padding: 0 12px;
@@ -163,10 +143,6 @@
 	  font-family: 'Knewave', cursive;
 	  font-size: 36px;
 	  padding: 0 1%;
-	  background: $dark-black;
-	  -webkit-background-clip: text;
-	  background-clip: text;
-	  -webkit-text-fill-color: transparent;
 	}
 	#menu-trigger {
     display: none;
@@ -179,12 +155,6 @@
     .container {
       max-width: 760px; 
     }
-    // .u-col-4 {
-    //   width: 40%;
-    // }
-    // .u-col-8 {
-    //   width: 60%;
-    // }
     .web-name{
 	    font-size: 28px;
 		}

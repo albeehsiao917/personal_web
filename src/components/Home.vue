@@ -1,10 +1,10 @@
 <template>
 	<div>
 		<navbar />
-		<about id="about" ref="about" />
-    <skill id="skill" ref="skill" />
-    <project id="projects" ref="projects" />
-    <resume id="resume" ref="resume" />
+		<about id="about" ref="about"/>
+    <skill id="skill" ref="skill"/>
+    <project id="project" ref="project"/>
+    <resume id="resume" ref="resume"/>
     <div id="copyright">
 	    <footer>&copy; 2018 Albee Hsiao</footer>
 		</div>

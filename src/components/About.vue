@@ -45,10 +45,6 @@
 	</div>
 </template>
 
-<script>
-	
-</script>
-
 <style lang="scss" scoped>
 	$dark-black: #333;
 	$dark-gray: #50514F;
@@ -181,7 +177,7 @@
 	    height: 150px;
 	    background-image: url('../images/selfie.jpg');
 	    background-size: cover;
-	    background-position: center;
+	    background-position: top;
 	    border-radius: 75px;
 	  }
 	  .icons {
