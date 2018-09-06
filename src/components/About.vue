@@ -34,7 +34,7 @@
             <a href="https://www.instagram.com/hsiao917/" target="_blank">
               <img src="../images/instagram.png" alt="instagram">
             </a>
-            <a href="www.linkedin.com/in/albeehsiao-8ba453146" target="_blank">
+            <a href="https://www.linkedin.com/in/albeehsiao/" target="_blank">
               <img src="../images/linkedin.png" alt="linkedin">
             </a>
             <a href="https://github.com/albeehsiao917" target="_blank">
