@@ -9,19 +9,15 @@
           	<ul>
           		<li>
           			<a v-scroll-to="'#about'">關於</a>
-			      		<span class="boundary"></span>
           		</li>
           		<li>
           			<a v-scroll-to="'#skill'">技能</a>
-			      		<span class="boundary"></span>
           		</li>
           		<li>
           			<a v-scroll-to="'#project'">專案</a>
-			      		<span class="boundary"></span>
           		</li>
           		<li>
           			<a v-scroll-to="'#resume'">履歷</a>
-                <span class="boundary"></span>
           		</li>
           	</ul>
           </div>
@@ -118,7 +114,7 @@
       float: left;
     }
     a {
-	    margin: 0 1%;
+      padding: 0 12px;
 	    letter-spacing: 2px;
 	    font-size: 1rem;
 	    color: $dark-black;
@@ -127,13 +123,7 @@
 	      color: $gray-blue;
 	      cursor: pointer;
 	      border-bottom: 2px solid $gray-blue;
-	    }	  }
-  }
-  .boundary {
-    &:after {
-      content: "|";
-      padding: 0 12px;
-      color: $dark-black;
+	    }	  
     }
   }
 	.web-name{
@@ -182,12 +172,6 @@
       padding: 5px 0;
       line-height: 38px;
     }
-    .boundary {
-      &:after {
-        content: "";
-        padding: 0;
-      }
-    }
     #nav.open {
       display: block;
       width: 100%;
@@ -205,6 +189,9 @@
         justify-content: flex-end;
         padding: 0 5px;
         float: none;
+      }
+      a {
+        padding: 0px;
       }
     }
   }
